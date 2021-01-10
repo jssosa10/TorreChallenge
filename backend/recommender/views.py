@@ -18,8 +18,15 @@ class Users(APIView):
     def get(self, request, primary_skill):
 
         response = requests.post('https://search.torre.co/people/_search/?offset=0&size=100')
-        users = response.json()
-
+        users = response.json()['results']
         return Response(users)
 
+class Opportunities(APIView):
 
+    permission_classes = (AllowAny,)
+
+    def get(self, request, offset, size):
+
+        response = requests.post(f'https://search.torre.co/opportunities/_search/?offset={offset}&size={size}')
+        users = response.json()
+        return Response(users)
