@@ -17,4 +17,9 @@
 
 ## Sat 01-09-21 15 - 21
 * Select besta idea of the day.
-* Start coding backend service in Django. 
+* Start coding backend service in Django.
+
+## Sat 01-09-21 21 - 24
+* Connect with Torre APIs.
+* Limit scope of idea (only recommending profiles to opportunities and no the other way).
+* Create Model for recommendations.
