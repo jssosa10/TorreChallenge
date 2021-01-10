@@ -35,3 +35,7 @@
 3. Migrate from Django to FastAPI
 4. Complete Backend.
 5. Init Frontend.
+
+## Sun 01-10-21 15
+* Created databases in mongo atlas.
+* Completed cron_job to update data in mongo every 12Hrs, deployed in gcloud usingv cloud functions and job scheduler. 
