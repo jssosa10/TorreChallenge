@@ -14,3 +14,7 @@
 * Keep Brainstorming.
 * Scketching first ideas.
 * Lunch Break.
+
+## Sat 01-09-21 15 - 21
+* Select besta idea of the day.
+* Start coding backend service in Django. 
