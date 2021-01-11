@@ -40,8 +40,12 @@
 * Created databases in mongo atlas.
 * Completed cron_job to update data in mongo every 12Hrs, deployed in gcloud using cloud functions and job scheduler.
 
-## sun 01-10-21 16 - 19
+## Sun 01-10-21 16 - 19
 * Rewrite backend using FastAPI.
 * Create models to use as facade of original Torre data.
 * implement endpoint to serve info of endpoint (https://torre.co/api/opportunities/{id}) (Facade design pattern)
 * impelment endpoint that given a  primary_skill and a job opportunity find all the people that has that primary_skill, also calculate a simple matric of matching of the job and the people.
+
+## Sun 01-10-21 20
+* Init Reactjs project.
+* Design UI/UX. 
