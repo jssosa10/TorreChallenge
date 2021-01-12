@@ -14,6 +14,7 @@ def get_all_people(collection):
 
 def extract_data(event, context):
     """Triggered from a message on a Cloud Pub/Sub topic.
+       extract data from torre API and save it to a mongodb cluster
     Args:
          event (dict): Event payload.
          context (google.cloud.functions.Context): Metadata for the event.

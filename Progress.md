@@ -61,4 +61,7 @@
 * Complete front and add styles.
 
 ## Tue 01-12-21 0-5
-*Deployment in Google Cloud and big troubleshooting.
+* Deployment in Google Cloud and big troubleshooting.
+
+## Tue 01-12-21 8
+* Documenting.
