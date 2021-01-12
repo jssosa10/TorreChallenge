@@ -49,3 +49,10 @@
 ## Sun 01-10-21 20
 * Init Reactjs project.
 * Design UI/UX. 
+
+## Mon 01-11-21 10 - 12 
+* Select material-ui as components framework.
+* Create initial layout.
+
+## Mon 01-11-21 15 - 21
+* Add functionalities to front end.

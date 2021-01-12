@@ -34,6 +34,7 @@ class User(BaseModel):
     verified: bool
     match_index: float
     picture: Optional[str]
+    professionalHeadline: Optional[str]
     skills: List[Skill]
 
     class Config:
