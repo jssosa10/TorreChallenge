@@ -10,11 +10,22 @@ import CandidatesList from './CandidatesList';
 const useStyles = makeStyles((theme) => ({
     formControl: {
         margin: theme.spacing(1),
-        minWidth: 120,
+        minWidth: 250,
     },
     selectEmpty: {
         marginTop: theme.spacing(2),
     },
+    select: {
+        '&:before': {
+            borderColor: '#D3D936',
+        },
+        '&:after': {
+            borderColor: '#D3D936',
+        }
+    },
+    icon: {
+        fill: '#D3D936',
+    }
 }));
 
 const Mathcher = (props) => {
@@ -25,7 +36,7 @@ const Mathcher = (props) => {
     const [loading, setLoading] = useState(false);
     const updateCandidates = async(skill) =>{
         setLoading(true);
-        const res = await fetch('http://localhost:8000/' + `users/${skill}`, {
+        const res = await fetch(`https://torre-back-pel3jonw4q-uc.a.run.app/users/${skill}`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json'},
                 body: JSON.stringify(opportunity)
@@ -52,14 +63,22 @@ const Mathcher = (props) => {
     };
     
     return (
-        <div>
-            <h1>{opportunity.objective}</h1>
+        <div className='ContainerMatcher'>
+        <div className='Matcher'>
+            <div className='Header'>
+            <h1 style={{paddingBottom: '15px'}}>{opportunity.objective}</h1>
             <FormControl variant="outlined" className={classes.formControl}>
-                <InputLabel id="demo-simple-select-outlined-label">Primary Skill</InputLabel>
+                <InputLabel style={{color: '#9EA0A3'}} id="demo-simple-select-outlined-label">Primary Skill</InputLabel>
                 <Select
                     value={primarySkill}
                     onChange={handleChange}
                     label="Primary Skill"
+                    style={{color: '#9EA0A3'}}
+                    inputProps={{
+                        classes: {
+                            icon: classes.icon,
+                        },
+                    }}
                 >
                     <MenuItem value="">
                         <em>None</em>
@@ -71,9 +90,10 @@ const Mathcher = (props) => {
                     }
                 </Select>
             </FormControl>
-            <div>
+            </div>
+            <div style={{marginTop:'200px'}}>
             {   loading ? (
-                    <CircularProgress />
+                    <CircularProgress color='#D3D936'/>
                 ) :
                 candidates.length > 0 ? (
                     <CandidatesList candidates={candidates} />
@@ -82,6 +102,7 @@ const Mathcher = (props) => {
                 )
             }
             </div>
+        </div>
         </div>
     );
 }

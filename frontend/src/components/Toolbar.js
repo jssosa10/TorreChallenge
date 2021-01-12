@@ -7,7 +7,6 @@ const Toolbar = (props) => {
                     torre - matcher
                 </a>
             </nav>
-            <div class='conteiner p-3'></div>
         </header>
     );
 };

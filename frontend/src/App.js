@@ -5,7 +5,6 @@ import Layout from './containers/Layout';
 function App() {
   return (
     <>
-      <Toolbar />
       <Layout />
     </>
   );

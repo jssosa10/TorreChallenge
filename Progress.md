@@ -56,3 +56,9 @@
 
 ## Mon 01-11-21 15 - 21
 * Add functionalities to front end.
+
+## Mon 01-11-21 22-24
+* Complete front and add styles.
+
+## Tue 01-12-21 0-5
+*Deployment in Google Cloud and big troubleshooting.
